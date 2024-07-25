@@ -21,6 +21,11 @@ uanme
 ### To remove the docker image
 ```docker image rm imageId ```
 
+### Command to start a docker
+```docker start containerName```
+##### Command to start a interactive bash when docker starts
+```docker exec -it containerName bash```
+
 ### To run ubuntu on docker please remind docker is aslo a kind of virtual machine
 ```docker run -it ubuntu```
 **-it** === **interactive** gonna interact with the ubuntu machine
