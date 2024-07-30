@@ -7,11 +7,6 @@
 * node ubuntu python etc.. are the images on the basis of requirement lots of images come together making docker image
 so docker images is combination of many images or and also base image that is the os.
 
-#### Refrence 
- 1. [Piyush Garg](https://youtube.com/playlist?list=PLinedj3B30sDvBfeK9EPz9pcJNlM0f3ph&si=EVq9O8QAlOVzFATn)
- 2. Harkirat Singh
- 3. Krish Naik 
-
 ### What is docker
 * A project require different packages let say we are working on a project for a years initially when we started project it was node-16
 react-16 postgress-4 express-3 
