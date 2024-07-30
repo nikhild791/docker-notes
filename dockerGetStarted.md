@@ -81,9 +81,12 @@ CMD [ "node", "index" ]
 ### To check whether the container is running status
 ```docker ps```
 but it will not work as you have exposed the 9000 port inside the docker machine and also you have exposed that port to the external world but have not mapped it to main machine
+#### Port mapping (publishing ports) can only be done when creating a new container, not with existing containers.
 ### Mapping the port or Port mapping p stand for port
 ```docker run -p 3000:9000 myapp```
 * here if we don't write the EXPOSE 9000 in the Dockerfile the servers 9000 port will be still accessible because of the run -p command
+### Koi bhi web service chalani ho to we have to port mapping eg nginx 8080:80 apache etc
+```docker run -it --name nx -p 8080:80 nginx```
 ### if want to use the machine with running
 ```docker run -it -p 3000:9000 myapp```
 

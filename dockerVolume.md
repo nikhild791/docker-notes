@@ -13,7 +13,12 @@ docker container ls -a
 ```
 * Let's moun the app folder to node container
 ```docker run -it -v [Location of app]:/home/app node bash```
+If you are in windows use this command
+```docker run -it -v %cd%/dockerVolume:/home/app node bash```
+cd = current directory for windows like pwd cwd
+%cd% it will treated as variable
 A bash will open do 
+
 ```
 uname whoami ls [separately]
 To see the code inside the index.js
@@ -26,10 +31,11 @@ nodemon index.js
 ```
 now make changes in index.js it should reflect in the node container
 
-## Create a volume 
+## Create and remove a volume 
 ```
 docker volume create data
 docker volume ls
+docker volume rm data 
 ```
 ## Mounting volume to container[data volume to node container]
 ```docker run -it -v data:/data node bash```
