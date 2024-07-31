@@ -1,5 +1,13 @@
 ## <center><font color="red">🐳 Docker Volume 🐳</font></center>
 
+#### ```docker run``` spins a new container where ```docker start``` starts the old container
+
+### how to pass environment variable values inside docker
+```docker run -it -p 1025:1025 -e key=value key=value mailhog```
+
+#### To execute the command inside the docker and return to local terminal
+```docker exec containerName ls```
+
 ### To run the container in the background 
 ```docker run -d -p 8080:80 nginx```
 

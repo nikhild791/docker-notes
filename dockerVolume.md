@@ -9,7 +9,7 @@ Docker container gets a temperary memory if we make a database inside the contai
 * open terminal pull a node image
 ```
 docker run -it node:latest
-docker container ls -a
+docker container ls -a  ## a stands for all
 ```
 * Let's moun the app folder to node container
 ```docker run -it -v [Location of app]:/home/app node bash```
