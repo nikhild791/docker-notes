@@ -14,3 +14,6 @@ see format online
 
 ##### To check a compose file 
 [docker-compose.yml](https://github.com/calcom/cal.com/blob/main/packages/prisma/docker-compose.yml)
+
+##### To delete all unused images
+```docker rmi $(docker images -aq or docker images -a -q) // if you try to remove the running images it will throw error first stop or remove the running container than run the command```
